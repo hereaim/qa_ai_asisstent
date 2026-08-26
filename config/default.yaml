@@ -1,0 +1,20 @@
+project:
+  name: project-name
+  code: PRJ
+
+sources:
+  jira:
+    project_key: PRJ
+
+  tms:
+    project_id: 123
+
+  gitlab:
+    autotest_repositories:
+      - group/autotests
+
+automation:
+  language: python
+  framework: pytest
+  ui: playwright
+  api: httpx

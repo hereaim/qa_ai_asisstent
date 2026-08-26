@@ -1,0 +1,29 @@
+project:
+  name: project-name
+  code: PRJ
+
+sources:
+  jira:
+    project_key: PRJ
+
+  testy:
+    project_id: 123
+
+  confluence:
+    spaces:
+      - PROJECT
+
+  gitlab:
+    autotest_repositories:
+      - group/autotests
+
+automation:
+  language: python
+  framework: pytest
+  ui: playwright
+  api: httpx
+
+coverage:
+  requirement_source: jira
+  manual_source: testy
+  automation_source: gitlab
