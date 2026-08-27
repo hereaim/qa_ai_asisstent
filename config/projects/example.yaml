@@ -6,7 +6,7 @@ sources:
   jira:
     project_key: PRJ
 
-  testy:
+  tms:
     project_id: 123
 
   confluence:
@@ -25,5 +25,5 @@ automation:
 
 coverage:
   requirement_source: jira
-  manual_source: testy
+  manual_source: tms
   automation_source: gitlab

@@ -2,20 +2,20 @@
 ## analyze-task
 ### Вход: Jira issue key.
 Алгоритм:
-1. Read issue.
-2. Read parent.
-3. Read subtasks.
-4. Read comments.
-5. Read links.
-6. Search Confluence.
-7. Search Testy.
-8. Search GitLab.
-9. Build context.
-10. Identify requirements.
-11. Identify risks.
-12. Identify gaps.
-13. Generate questions.
-14. Return evidence and confidence.
+1. Прочитать задачу.
+2. Прочитать родительскую задачу.
+3. Прочитать подзадачи.
+4. Прочитать комментарии.
+5. Прочитать ссылки.
+6. Поиск в Confluence.
+7. Поиск в ТМС.
+8. Поиск в GitLab.
+9. Собрать контекст.
+10. Определить требования.
+11. Определить риски.
+12. Определить пробелы.
+13. Сгенерировать вопросы.
+14. Получить доказательства и уверенность.
 
 ## find-existing-tests
 ### Цель — не допустить создания дублей.
@@ -30,39 +30,39 @@
 ## generate-test-cases
 ```text
 ### Перед генерацией:
-requirements
+требования
       ↓
-existing tests
+существующие тесты
       ↓
-gaps
+пробелы
       ↓
-test design
+разработка тестов
 ```
 ### AI должен учитывать подходящие для функциональности:
-1. positive;
-2. negative;
-3. boundary;
-4. validation;
-5. permissions;
-6. error handling;
-7. integration;
-8. regression impact.
+1. положительные;
+2. негативные;
+3. граничные;
+4. валидация;
+5. разрешения;
+6. обработка ошибок;
+7. интеграция;
+8. влияние регрессии.
 
 ## analyze-coverage
 ### Строит временный граф:
 ```text
-Requirement
+Требования
    |
-   +-- Manual Test
+   +-- Ручные тесты
    |
-   +-- Automated Test
+   +-- Автоматизированные тесты
 ```
 ### Для каждой связи:
 ```text
 type: explicit | inferred | imported
 confidence: high | medium | low
 source:
-  system: jira | testy | gitlab | confluence
+  system: jira | tms | gitlab | confluence
   id: ...
 ```
 
@@ -78,7 +78,7 @@ source:
 8. project conventions.
 Принцип:
 ```text
-Existing project conventions over generic best practices.
+Существующие соглашения по проекту вместо общих лучших практик.
 ```
 
 ## review-autotest

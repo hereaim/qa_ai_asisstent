@@ -1,6 +1,6 @@
 # Модель разрешений
 ## READ
-1. Search, read, analyze, compare.
+1. Поиск, чтение, анализ, сравнение.
 ## PLAN
 1. Планирование и подготовка diff/действий.
 ## LOCAL WRITE
@@ -10,13 +10,13 @@
 3. локальная ветка.
 ## EXTERNAL WRITE
 ### С отдельным подтверждением:
-1. Testy create/update;
-2. Jira create/update;
-3. GitLab push;
+1. создание/обновление в TMS;
+2. создание/обновление в Jira;
+3. пуш в GitLab;
 4. MR.
 ## CRITICAL
 ### Запрещено в MVP:
-1. merge;
-2. production;
-3. secret management;
-4. destructive operations.
+1. слияние;
+2. продакшн;
+3. управление секретами;
+4. деструктивные операции.

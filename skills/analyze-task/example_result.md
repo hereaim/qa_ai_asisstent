@@ -1,38 +1,38 @@
-# Task analysis
+# Анализ задачи
 
-## Summary
+## Резюме
 ...
 
-## Requirements
+## Требования
 - ...
 
-## Related issues
+## Связанные проблемы
 - ...
 
-## Documentation
+## Документация
 - ...
 
-## Existing manual tests
+## Существующие ручные тесты
 - ...
 
-## Existing automated tests
+## Существующие автоматизированные тесты
 - ...
 
-## Coverage
-| Requirement | Manual | Automation | Confidence |
+## Покрытие
+| Требование  | Ручное | Автоматизация | Уверенность |
 |---|---|---|---|
 
-## Risks
+## Риски
 - ...
 
-## Gaps
+## Пробелы
 - ...
 
-## Assumptions
+## Предположения
 - ...
 
-## Questions
+## Вопросы
 - ...
 
-## Evidence
+## Доказательства
 - ...
